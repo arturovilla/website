@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bod {
+    background-image: linear-gradient(#2A363B,#000);
+    /*background-image: radial-gradient(circle,#07cfe7,#f7f8fa,#f9e600,#f8211f,#201919,#0028a0);*/
+}
+/*fonts i used*/
+@font-face{
+    src: url(fonts/PPWoodland-Bold.otf);
+    font-family: woods;
+}
+@font-face{
+    src: url(fonts/Quicksand-Medium.ttf);
+    font-family: woodslight;
+}
+
+
+/*grid for whole page*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". title ."
+    ". navi ."
+    "qanda qanda qanda"
+    ". resandqual .";
+}
+.title{
+    grid-area: title;
+    justify-self: center;
+}
+.navi{
+    grid-area: navi;
+    justify-self: center;
+}
+.resandqual{
+    grid-area: resandqual;
+}
+.qanda{
+    grid-area: qanda;
+}
+
+
+
+.heading{
+    color: #99B898;
+    font-size: 14vw;
+    text-align: left;
+    font-family: woods;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+.qandaheading{
+    color: #99B898;
+    font-size: 10vw;
+    text-align: center;
+    font-family: woods;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+
+
+
+.menu{
+    font-size: 2vw;
+    
+    padding-top: 1vh;
+    padding-bottom: 20px;
+}
+
+/*styling for links*/
+.navlinks{
+    color: #99B898;
+    font-family: woods;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+}
+.navlinks:hover {
+    color: #FF847C;
+}
+
+/*content 1 styling*/
+.questions{
+    font-size: 6vw;
+    text-align: left;
+    color: #E84A5F;
+    font-family: woods;
+    padding-top: 1vh;
+    padding-left: 20vw;
+    padding-right: 50vw;
+}
+.answers{
+    font-size: 6vw;
+    text-align: right;
+    color: #FECEA8;
+    font-family: woods;
+    padding-top: 1vh;
+    padding-right: 20vw;
+    padding-left: 50vw;
+}
+.questionsC{
+    font-size: 3vw;
+    text-align: left;
+    color: #E84A5F;
+    font-family: woodslight;
+    padding-top: 1vh;
+    padding-left: 20vw;
+    padding-right: 50vw;
+}
+.answersC{
+    font-size: 3vw;
+    text-align: right;
+    color: #FECEA8;
+    font-family: woodslight;
+    padding-top: 1vh;
+    padding-right: 20vw;
+    padding-left: 50vw;
+}
+.res{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+}
+

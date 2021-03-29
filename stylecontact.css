@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bod {
+    background-image: linear-gradient(#f7f8fa, #f9e600,#f8211f,#201919,#0028a0,#07cfe7,#f7f8fa);
+    
+}
+
+/*fonts i used*/
+@font-face{
+    src: url(fonts/PPWoodland-Bold.otf);
+    font-family: woods;
+}
+@font-face{
+    src: url(fonts/Quicksand-Medium.ttf);
+    font-family: woodslight;
+}
+
+
+/*grid for whole page*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". title ."
+    ". navi ."
+    ". cnt .";
+}
+.title{
+    grid-area: title;
+}
+.navi{
+    grid-area: navi;
+    justify-self: center;
+}
+.cnt{
+    grid-area: cnt;
+}
+
+
+
+.heading{
+    /*color: #000;*/
+    color: #f7f8fa;
+    font-size: 15vw;
+    text-align: left;
+    font-family: woods;
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+}
+
+
+.menu{
+    font-size: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 20px;
+}
+
+/*styling for links*/
+.navlinks{
+    color: #f7f8fa;
+    font-family: woods;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+}
+.navlinks:hover {
+    color: #0028a0;
+}
+
+/*content 1 styling*/
+.cntheading{
+    font-size: 5vw;
+    text-align: center;
+    color: #f7f8fa;
+    font-family: woods;
+    
+    padding-top: 4vh;
+}
+
+
+.sociallinks{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10vh;
+    width: 150px;
+    padding-top: 3vh;
+    
+}
+.booklinks:hover {
+    color: red;
+}
+

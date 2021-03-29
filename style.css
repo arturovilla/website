@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+.title {
+    background-image: linear-gradient(#f7f8fa, #f9e600,#f8211f,#201919,#0028a0,#07cfe7,#f7f8fa);
+    background-image: linear-gradient(#07cfe7,#f7f8fa,#f7f8fa,#f9e600,#f8211f,#201919,#0028a0);
+}
+.pic{
+
+    background-image: linear-gradient(#07cfe7,#f7f8fa,#f7f8fa,#f9e600,#f8211f,#201919,#0028a0);
+    background-image: linear-gradient(#f7f8fa, #f9e600,#f8211f,#201919,#0028a0,#07cfe7,#f7f8fa);
+
+}*/
+
+/*fonts i used*/
+@font-face{
+    src: url(fonts/PPWoodland-Bold.otf);
+    font-family: woods;
+}
+@font-face{
+    src: url(fonts/Quicksand-Medium.ttf);
+    font-family: woodslight;
+}
+@font-face{
+    src: url(fonts/Druk\ Wide\ Bold.ttf);
+    font-family: druk;
+}
+.bod {
+    background-image: linear-gradient(#f7f8fa 42%,#07cfe7);
+    /*background-image: radial-gradient(circle,#07cfe7,#f7f8fa,#f9e600,#f8211f,#201919,#0028a0);*/
+}
+
+
+/*grid for whole page*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "pic pic"
+    "title title"
+    "navi navi"
+    "cnt1 cnt1"
+    "op1 op1"
+    "cnt2 cnt2"
+    "op2 op2";
+}
+.title{
+    grid-area: title;
+    justify-self: center;
+    
+}
+.pic{
+    grid-area: pic;
+    justify-self: center;
+    
+}
+.navi{
+    grid-area: navi;
+    justify-self: center;
+}
+.cnt1{
+    grid-area: cnt1;
+}
+.cnt2{
+    grid-area: cnt2;
+}
+.op1{
+    grid-area: op1;
+}
+.op2{
+    grid-area: op2;
+}
+
+
+
+.heading{
+    color: #000;
+    font-size: 10vw;
+    text-align: center;
+    font-family: druk;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    
+}
+.headshot{
+    width : 25vw;
+    height: auto;/*to preserve the aspect ratio of the image*/
+    padding-top: 10vh;
+
+}
+.op1img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.op2img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 3vh;
+}
+.menu{
+    font-size: 2vw;
+    
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    
+}
+
+/*styling for links*/
+.navlinks{
+    color: #201919;
+    font-family: woods;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+}
+.navlinks:hover {
+    color: red;
+}
+
+/*content 1 styling*/
+.cnt1heading{
+    font-size: 5vw;
+    text-align: left;
+    background: -webkit-radial-gradient(#f9e600,#f8211f,#201919,#0028a0,#07cfe7,#f7f8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: woods;
+    padding-left: 20vw;
+    padding-top: 5vh;
+}
+.cnt2heading{
+    font-size: 5vw;
+    text-align: left;
+    background: -webkit-radial-gradient(#f8211f,#201919,#0028a0,#07cfe7,#f7f8fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: woods;
+    padding-left: 20vw;
+    padding-top: 10vh;
+}
+.cnt1para{
+    font-size: 4vw;
+    text-align: center;
+    color: #000;
+    font-family: woodslight;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.cnt2para{
+    font-size: 3vw;
+    text-align: center;
+    color: #000;
+    font-family: woodslight;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.booklinks{
+    color: #000;
+    font-family: woods;
+    text-decoration: none;
+    font-size: 4vw;
+    
+}
+.booklinks:hover {
+    color: red;
+}
